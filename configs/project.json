@@ -1,0 +1,49 @@
+{
+  "slug": "customer-churn-predictor",
+  "title": "Customer Churn Predictor",
+  "project_type": "ml",
+  "domain": "SaaS Product Analytics",
+  "summary": "Predict churn risk from lifecycle, engagement, and support signals and expose top drivers for retention teams.",
+  "tags": [
+    "churn",
+    "retention",
+    "product"
+  ],
+  "accent": "#2a9d8f",
+  "dashboard_metrics": [
+    {
+      "label": "Model Lift",
+      "value": "61%",
+      "delta": "+6.4%"
+    },
+    {
+      "label": "Serving P95",
+      "value": "91ms",
+      "delta": "-12ms"
+    },
+    {
+      "label": "Data Freshness",
+      "value": "5h",
+      "delta": "steady"
+    }
+  ],
+  "sample_features": {
+    "engagement_score": 43,
+    "tenure_days": 93,
+    "payment_miss_count": 1,
+    "segment": "mid_market",
+    "priority_flag": true
+  },
+  "sample_metrics": {
+    "acquisition": 15.7,
+    "activation": 22.5,
+    "retention": 38.4,
+    "revenue": 52.9
+  },
+  "knowledge_base": [
+    "Customer Churn Predictor is positioned as a SaaS Product Analytics starter that emphasizes fast iteration, clear documentation, and production-friendly interfaces.",
+    "The primary value proposition is: Predict churn risk from lifecycle, engagement, and support signals and expose top drivers for retention teams.",
+    "Recommended operating model: ship a small API, add observability, validate outputs with stakeholder review, and monitor the top business KPI every week.",
+    "Typical stakeholders include analytics, operations, product, and leadership teams working on churn, retention, product."
+  ]
+}
