@@ -1,114 +1,29 @@
-
-        <!doctype html>
-        <html lang="en">
-        <head>
-          <meta charset="utf-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-          <title>Customer Churn Predictor</title>
-          <link rel="stylesheet" href="./styles.css">
-        </head>
-        <body class="surface-aurora">
-          <div class="page layout-folio eyebrow-outline headline-compact modules-2 hero-align-split">
-            <section class="hero">
-              <div class="panel hero-copy">
-                <span class="eyebrow" data-health>Analytics Studio</span>
-                <h1 id="project-title">Customer Churn Predictor</h1>
-                <p id="project-summary" class="lead">Predict churn risk from lifecycle, engagement, and support signals and expose top drivers for retention teams.</p>
-                <ul id="project-tags" class="tag-list">
-                  <li>churn</li><li>retention</li><li>product</li>
-                </ul>
-              </div>
-              <div class="panel hero-side">
-                <div class="metric-grid">
-                  <article class='card'><span>Model Lift</span><strong>61%</strong><em>+6.4%</em></article>
-<article class='card'><span>Serving P95</span><strong>91ms</strong><em>-12ms</em></article>
-<article class='card'><span>Data Freshness</span><strong>5h</strong><em>steady</em></article>
-                </div>
-                <div class="mini-grid">
-                  <article class='mini-card'><span>Project Type</span><strong>ML</strong></article><article class='mini-card'><span>Domain</span><strong>SaaS Product Analytics</strong></article><article class='mini-card'><span>Application</span><strong>Analytics Studio</strong></article><article class='mini-card'><span>Deployment</span><strong>Docker + CI</strong></article>
-                </div>
-              </div>
-            </section>
-            <section class="app-grid">
-              <article class="panel module js-module span-normal">
-          <div class="module-header">
-            <span>Studio 01</span>
-            <h2>Opportunity Scorecard</h2>
-            <p>Score the current opportunity shape before deciding what to prioritize next.</p>
-          </div>
-          <textarea class="js-input">{
-  &quot;features&quot;: {
-    &quot;engagement_score&quot;: 43,
-    &quot;tenure_days&quot;: 93,
-    &quot;payment_miss_count&quot;: 1,
-    &quot;segment&quot;: &quot;mid_market&quot;,
-    &quot;priority_flag&quot;: true
-  }
-}</textarea>
-          <div class="button-row">
-            <button class="js-run" data-endpoint="/score" data-input-mode="json">Score Opportunity</button>
-          </div>
-          <pre class="js-output">Opportunity score and top factors will appear here.</pre>
-        </article>
-<article class="panel module js-module span-wide">
-          <div class="module-header">
-            <span>Studio 02</span>
-            <h2>Metric Storyline</h2>
-            <p>Translate KPI movement into a concise summary for product, growth, or finance stakeholders.</p>
-          </div>
-          <textarea class="js-input">{
-  &quot;metrics&quot;: {
-    &quot;acquisition&quot;: 15.7,
-    &quot;activation&quot;: 22.5,
-    &quot;retention&quot;: 38.4,
-    &quot;revenue&quot;: 52.9
-  },
-  &quot;baseline&quot;: {
-    &quot;acquisition&quot;: 14.44,
-    &quot;activation&quot;: 20.7,
-    &quot;retention&quot;: 35.33,
-    &quot;revenue&quot;: 48.67
-  }
-}</textarea>
-          <div class="button-row">
-            <button class="js-run" data-endpoint="/analyze" data-input-mode="json">Summarize Metrics</button>
-          </div>
-          <pre class="js-output">Metric storyline summary will appear here.</pre>
-        </article>
-<article class="panel module js-module span-normal">
-          <div class="module-header">
-            <span>Studio 03</span>
-            <h2>Decision Memo</h2>
-            <p>Generate the next action memo grounded in the project-specific context.</p>
-          </div>
-          <textarea class="js-input">{
-  &quot;prompt&quot;: &quot;Recommend the next best action for Customer Churn Predictor.&quot;,
-  &quot;features&quot;: {
-    &quot;engagement_score&quot;: 43,
-    &quot;tenure_days&quot;: 93,
-    &quot;payment_miss_count&quot;: 1,
-    &quot;segment&quot;: &quot;mid_market&quot;,
-    &quot;priority_flag&quot;: true
-  },
-  &quot;metrics&quot;: {
-    &quot;acquisition&quot;: 15.7,
-    &quot;activation&quot;: 22.5,
-    &quot;retention&quot;: 38.4,
-    &quot;revenue&quot;: 52.9
-  }
-}</textarea>
-          <div class="button-row">
-            <button class="js-run" data-endpoint="/recommend" data-input-mode="json">Draft Memo</button>
-          </div>
-          <pre class="js-output">Decision memo will appear here.</pre>
-        </article>
-            </section>
-            <footer class="footer">
-              <span>SaaS Product Analytics • ML • Analytics Studio</span>
-              <span>customer-churn-predictor</span>
-            </footer>
-          </div>
-          <script id="bootstrap-data" type="application/json">{"project": {"slug": "customer-churn-predictor", "title": "Customer Churn Predictor", "project_type": "ml", "domain": "SaaS Product Analytics", "summary": "Predict churn risk from lifecycle, engagement, and support signals and expose top drivers for retention teams.", "tags": ["churn", "retention", "product"]}, "app_archetype": "studio", "ui_profile": {"layout": "folio", "surface": "aurora", "font_stack": "\"Plus Jakarta Sans\", \"Segoe UI\", sans-serif", "radius": 28, "shadow": 62, "eyebrow_style": "outline", "module_columns": 2, "hero_align": "split", "headline_mode": "compact"}, "app_modules": [{"label": "Studio 01", "title": "Opportunity Scorecard", "description": "Score the current opportunity shape before deciding what to prioritize next.", "endpoint": "/score", "input_mode": "json", "cta": "Score Opportunity", "prefill": "{\n  \"features\": {\n    \"engagement_score\": 43,\n    \"tenure_days\": 93,\n    \"payment_miss_count\": 1,\n    \"segment\": \"mid_market\",\n    \"priority_flag\": true\n  }\n}", "hint": "Opportunity score and top factors will appear here.", "span": "normal"}, {"label": "Studio 02", "title": "Metric Storyline", "description": "Translate KPI movement into a concise summary for product, growth, or finance stakeholders.", "endpoint": "/analyze", "input_mode": "json", "cta": "Summarize Metrics", "prefill": "{\n  \"metrics\": {\n    \"acquisition\": 15.7,\n    \"activation\": 22.5,\n    \"retention\": 38.4,\n    \"revenue\": 52.9\n  },\n  \"baseline\": {\n    \"acquisition\": 14.44,\n    \"activation\": 20.7,\n    \"retention\": 35.33,\n    \"revenue\": 48.67\n  }\n}", "hint": "Metric storyline summary will appear here.", "span": "wide"}, {"label": "Studio 03", "title": "Decision Memo", "description": "Generate the next action memo grounded in the project-specific context.", "endpoint": "/recommend", "input_mode": "json", "cta": "Draft Memo", "prefill": "{\n  \"prompt\": \"Recommend the next best action for Customer Churn Predictor.\",\n  \"features\": {\n    \"engagement_score\": 43,\n    \"tenure_days\": 93,\n    \"payment_miss_count\": 1,\n    \"segment\": \"mid_market\",\n    \"priority_flag\": true\n  },\n  \"metrics\": {\n    \"acquisition\": 15.7,\n    \"activation\": 22.5,\n    \"retention\": 38.4,\n    \"revenue\": 52.9\n  }\n}", "hint": "Decision memo will appear here.", "span": "normal"}], "sample_features": {"engagement_score": 43, "tenure_days": 93, "payment_miss_count": 1, "segment": "mid_market", "priority_flag": true}, "sample_metrics": {"acquisition": 15.7, "activation": 22.5, "retention": 38.4, "revenue": 52.9}, "knowledge_base": ["Customer Churn Predictor is positioned as a SaaS Product Analytics starter that emphasizes fast iteration, clear documentation, and production-friendly interfaces.", "The primary value proposition is: Predict churn risk from lifecycle, engagement, and support signals and expose top drivers for retention teams.", "Recommended operating model: ship a small API, add observability, validate outputs with stakeholder review, and monitor the top business KPI every week.", "Typical stakeholders include analytics, operations, product, and leadership teams working on churn, retention, product."], "dashboard_metrics": [{"label": "Model Lift", "value": "61%", "delta": "+6.4%"}, {"label": "Serving P95", "value": "91ms", "delta": "-12ms"}, {"label": "Data Freshness", "value": "5h", "delta": "steady"}]}</script>
-          <script src="./app.js"></script>
-        </body>
-        </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Customer Churn Predictor App</title>
+  <link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+  <div id="scene" class="app-scene">
+    <header class="shell hero">
+      <div>
+        <span class="eyebrow">Product and retention analytics</span>
+        <h1>Customer Churn Predictor</h1>
+        <p>![Demo Screenshot](demo/screenshot.png)</p>
+      </div>
+      <aside class="status-card">
+        <div class="pill">API connected</div>
+        <div class="pill">growth PM</div>
+        <div class="pill">signal-wave</div>
+      </aside>
+    </header>
+    <section id="metrics" class="grid metrics"></section>
+    <section id="signals" class="grid signals"></section>
+  </div>
+  <script>window.PROJECT_MANIFEST = {"slug": "customer-churn-predictor", "title": "Customer Churn Predictor", "summary": "![Demo Screenshot](demo/screenshot.png)", "domain": "Product and retention analytics", "audience": "growth PM", "promise": "Connect behavioral data to interventions that improve retention and revenue.", "hero": ["Production-grade app scaffold with API, CI, tests, Docker, and GitHub Pages landing.", "3D landing surface designed for GitHub Pages and recruiter-friendly storytelling.", "App backend structured for local or container deployment without changing the product narrative."], "kpis": [{"label": "Workflow clarity", "value": "84%", "note": "Operator actions mapped to product stages"}, {"label": "Deployment posture", "value": "API + Docker", "note": "Local and containerized startup paths"}, {"label": "Presentation layer", "value": "3D Pages ready", "note": "Static GitHub landing page included"}], "stages": ["ingest", "validate", "analyze", "decide", "monitor"], "cards": [{"title": "Operator cockpit", "body": "One-screen surface for the growth PM to understand what matters first."}, {"title": "API contract", "body": "Structured endpoints for health, manifest, readiness, and showcase data."}, {"title": "Deployment path", "body": "Repository includes Docker, Compose, CI workflow, and a Pages-ready landing surface."}], "scene": "signal-wave", "theme": {"bg": "#08100e", "surface": "#101d1a", "ink": "#ebfff8", "muted": "#8eb5a6", "accent": "#4ce0b3", "accent2": "#8fb8ff"}, "pages_url": "https://r-behera.github.io/customer-churn-predictor/", "api_examples": {"health": {"status": "ok", "project": "customer-churn-predictor"}, "readiness": {"api": "ready", "landing_page": "docs/index.html", "container": "Dockerfile present"}, "signals": [{"name": "Decision coverage", "status": "strong", "detail": "App and landing narrative aligned"}, {"name": "Operator context", "status": "strong", "detail": "Primary user anchored as growth PM"}, {"name": "Delivery path", "status": "ready", "detail": "Pages + containerized app scaffold generated"}]}};</script>
+  <script src="/assets/app.js"></script>
+</body>
+</html>
